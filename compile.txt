@@ -1,0 +1,8 @@
+
+Run Setup :: "python setup.py build_ext --inplace"
+
+Run Setup(No console) :: "python setup.py build_ext -w --inplace"
+
+gcc -Os -I C:\Users\Admin\AppData\Local\Programs\Python\Python38\include -o C:\Users\Admin\out.exe C:\Users\Admin\Desktop\hope\main.c -lpython38 -lm -L C:\Users\Admin\AppData\Local\Programs\Python\Python38\libs
+
+gcc -mconsole -DSIZEOF_VOID_P=8 -DMS_WIN64 C:\Users\Admin\Desktop\hope\main.c -IC:\Users\Admin\AppData\Local\Programs\Python\Python38\include -LC:\Users\Admin\AppData\Local\Programs\Python\Python38\libs -lpython38 -o C:\Users\Admin\Desktop\hope\out.exe
