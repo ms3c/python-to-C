@@ -1,7 +1,7 @@
 # python-to-C
-This will help you to convert your python3 code int to C/C++ code. The tested compile is obvious but not limited to MigwGCC Windows. 
+This example will assist you in converting your Python 3 code into C/C++ code. While the tested compiler is MinGW GCC for Windows, it is not limited to this option.
 
-So the first step is the .PYX file is edited as:
+First step the .PYX file is edited as:
 
 ```python
 from tkinter import Tk
