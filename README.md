@@ -14,5 +14,19 @@ if __name__ == "__main__":
     function()
 ```
     
-Then run ```python -m cython test.pyx --embed```
-Lastly ```gcc -mconsole -DSIZEOF_VOID_P=8 -DMS_WIN64 C:\Users\admin\main.c -IC:\Users\admin\AppData\Local\Programs\Python\Python38\include -LC:\Users\admin\AppData\Local\Programs\Python\Python38\libs -lpython38 -o C:\Users\admin\Desktop\main.exe```
+## Steps to Compile with Cython and GCC
+
+1. Run the following command to use Cython for embedding:
+
+   ```bash
+   python -m cython test.pyx --embed
+
+2. Compile the code using GCC with the following command:
+   
+```bash
+gcc -mconsole -DSIZEOF_VOID_P=8 -DMS_WIN64 \
+    C:\Users\admin\main.c \
+    -IC:\Users\admin\AppData\Local\Programs\Python\Python38\include \
+    -LC:\Users\admin\AppData\Local\Programs\Python\Python38\libs \
+    -lpython38 \
+    -o C:\Users\admin\Desktop\main.exe
